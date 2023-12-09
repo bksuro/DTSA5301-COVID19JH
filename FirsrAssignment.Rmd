@@ -1,0 +1,74 @@
+---
+title: "FirstAssignment"
+author: "S. bellamkonda"
+date: "2023-11-27"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# Use R Markdown to create your own document containing:
+
+## a bulleted list with sub-bullets under at least one item 
+* list items
+  + item 1
+  + item2
+* no items
+
+## a numbered list 
+1. list item 1
+2. list item 2
+
+## some words <i>italicized</i> 
+
+## some words <b>in bold print </b>
+
+## two levels of **headers**
+
+## the results of some R code without showing the code 
+```{r cars1, echo=FALSE}
+summary(cars)
+```
+
+
+## a table of text at least 3 columns wide and 3 rows long 
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+      
+
+## a plot (show the code that generates the plot) 
+```{r pressure1}
+plot(pressure)
+```
+
+## your session info (as output from R) 
+```{r SessionInfo, echo=FALSE}
+sessionInfo()
+```
